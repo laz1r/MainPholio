@@ -9,7 +9,7 @@
 
 /*===== Colores =====*/
 :root{
-    --first-color: #5361FF;
+    --first-color: #f87563;
     --white-color: #FAFAFF;
     --dark-color: #2A3B47;
     --text-color: #697477;
@@ -198,10 +198,15 @@ img{
     align-self: flex-end;
     padding-bottom: var(--mb-4);
 }
+.home__scroll-link-two{
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    color: rgb(253, 247, 244);
+}
 .home__scroll-link{
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
-    color: var(--white-color);
+    color: orangered;
 }
 .home__img{
     position: absolute;
@@ -216,19 +221,23 @@ img{
     row-gap: 2rem;
     text-align: center;
 }
+
 .about__img{
     display: flex;
     justify-content: center;
     padding-top: 1rem;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     background-color: var(--first-color);
-    border-radius: 50%;
+    border-radius: 100%;
     overflow: hidden;
 }
+
 .about__img img{
     width: 100px;
 }
+
+
 .about__subtitle{
     font-size: var(--h2-font-size);
     color: var(--first-color);
@@ -279,7 +288,7 @@ img{
     background-color: var(--white-color);
 }
 .portfolio__container{
-    justify-items: center;
+    justify-items: cover;
     row-gap: 2rem;
 }
 .portfolio__img{
@@ -297,7 +306,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(228, 180, 180, 0.3);
     border-radius: .5rem;
     cursor: pointer;
     backdrop-filter: blur(10px);
